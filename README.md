@@ -5,9 +5,9 @@
 # 查看分支
 1. git branch     查看本地分支
 ![git branch](https://github.com/zaiyuyishiyoudu/Godaddy/blob/master/查看本地分支.png)
-2. git branch -a  查看远程分支 --------------------对应github的Branches 开发版
+2. git branch -a  查看远程分支======================对应github的Branches 开发版
 ![git branch](https://github.com/zaiyuyishiyoudu/Godaddy/blob/master/查看远程分支.png)
-3. git tag		查看tag--------------------对应github的Tags 稳定版
+3. git tag		查看tag=====================对应github的Tags 稳定版
 ![git tag](https://github.com/zaiyuyishiyoudu/Godaddy/blob/master/查看tag.png)
 
 4. git checkout -b 希望的名称(任意取) origin/Branches分支名 签出分支 大写-B为强制
