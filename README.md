@@ -7,26 +7,25 @@
 ![git branch](https://github.com/zaiyuyishiyoudu/Godaddy/blob/master/查看本地分支.png)
 2. git branch -a  查看远程分支 对应github的Branches 开发版
 ![git branch](https://github.com/zaiyuyishiyoudu/Godaddy/blob/master/查看远程分支.png)
-![github](https://github.com/zaiyuyishiyoudu/Godaddy/blob/master/Brenches.png)
 3. git tag		查看tag 对应github的Tags 稳定版
 ![git tag](https://github.com/zaiyuyishiyoudu/Godaddy/blob/master/查看tag.png)
-![github](https://github.com/zaiyuyishiyoudu/Godaddy/blob/master/Tags.png)
 
 4. git checkout -b 希望的名称(任意取) origin/Branches分支名 签出分支 大写-B为强制
 5. 例如1：git checkout -b 18.06 origin/openwrt-18.06
-6. 例如2：git checkout -b 18.06 openwrt-18.06
 ![git checkout](https://github.com/zaiyuyishiyoudu/Godaddy/blob/master/签出18.06分支.png)
 
-7. git checkout -B 希望的名称(任意取) tags分支名 强制创建一个基于指定的tag的分支。
-8. 例如：git checkout -B 17.01.6 v17.01.6
+6. git checkout -B 希望的名称(任意取) tags分支名 强制创建一个基于指定的tag的分支。
+7. 例如：git checkout -B 17.01.6 v17.01.6
 ![git checkout](https://github.com/zaiyuyishiyoudu/Godaddy/blob/master/签出17.01.6分支.png)
 
-9. git checkout master  签回主分支
+8. git checkout master  签回主分支
 ![git checkout](https://github.com/zaiyuyishiyoudu/Godaddy/blob/master/签回主分支.png)
 
 # 直接获取开发版源码
-# 优点：简单直接
-# 缺点：不能切换其它分支
+# 优点：
+ 简单直接
+# 缺点：
+ 不能切换其它分支
 # 直接获取开发版源码18.06分支
 1. git clone -b openwrt-18.06 https://github.com/openwrt/openwrt.git
 
@@ -42,10 +41,10 @@
 
 # 对本地代码库进行回滚
 1. git log 查看提交历史，找出要回滚到的commit-id
-![git log](https://github.com/zaiyuyishiyoudu/Godaddy/blob/master/4.14.106.png)
+![git log](https://github.com/zaiyuyishiyoudu/Godaddy/blob/master/4.14.103.png)
 2. git reset --hard commit-id :回滚到commit-id
-3. 比如回滚到openwrt 4.14.106内核时的源码
-4. git reset --hard a8cfef6c4584b1cf3e334c6d43a850b86d536d7d
+3. 比如回滚到openwrt 4.14.103内核时的源码
+4. git reset --hard ceed0665cc68ee836806b0cc7ca496a858063ce2
 ![git log](https://github.com/zaiyuyishiyoudu/Godaddy/blob/master/回滚.png)
 5. 这时include/kernel-version.mk内显示的就是4.14.106的内核了
 ![git log](https://github.com/zaiyuyishiyoudu/Godaddy/blob/master/回滚后内核.png)
