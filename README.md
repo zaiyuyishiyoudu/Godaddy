@@ -28,10 +28,10 @@
 # 缺点：
  不能切换至其它分支
 # 直接获取开发版源码18.06分支
-1. git clone -b openwrt-18.06 https://github.com/openwrt/openwrt.git
+ git clone -b openwrt-18.06 https://github.com/openwrt/openwrt.git
 
 # 直接获取稳定版源码18.06.2分支
-1. git clone -b v18.06.2 https://github.com/openwrt/openwrt.git
+ git clone -b v18.06.2 https://github.com/openwrt/openwrt.git
 
 # 更新源码
 1. 未切换分支可以直接运行 git pull
@@ -46,5 +46,5 @@
 2. git reset --hard commit-id :回滚到commit-id
 3. 比如回滚到openwrt 4.14.103内核时的源码
 4. git reset --hard ceed0665cc68ee836806b0cc7ca496a858063ce2
-5. 这时include/kernel-version.mk内显示的就是4.14.106的内核了
+5. 这时include/kernel-version.mk内显示的就是4.14.103的内核了
 ![git log](https://github.com/zaiyuyishiyoudu/Godaddy/blob/master/回滚后内核.png)
