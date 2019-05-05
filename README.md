@@ -22,10 +22,11 @@
 ![git checkout](https://github.com/zaiyuyishiyoudu/Godaddy/blob/master/签回主分支.png)
 
 # 直接获取开发版源码
+ git clone -b 分支名 仓库链接
 # 优点：
  简单直接
 # 缺点：
- 不能切换其它分支
+ 不能切换至其它分支
 # 直接获取开发版源码18.06分支
 1. git clone -b openwrt-18.06 https://github.com/openwrt/openwrt.git
 
@@ -45,6 +46,5 @@
 2. git reset --hard commit-id :回滚到commit-id
 3. 比如回滚到openwrt 4.14.103内核时的源码
 4. git reset --hard ceed0665cc68ee836806b0cc7ca496a858063ce2
-![git log](https://github.com/zaiyuyishiyoudu/Godaddy/blob/master/回滚.png)
 5. 这时include/kernel-version.mk内显示的就是4.14.106的内核了
 ![git log](https://github.com/zaiyuyishiyoudu/Godaddy/blob/master/回滚后内核.png)
